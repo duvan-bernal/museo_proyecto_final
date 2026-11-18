@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artistas · Museo Virtual</title>
+  <meta name="description" content="Artistas, biografías y nacionalidades.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="artistas">
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <div id="site-header"></div>
+
+  <header class="page-hero">
+    <p class="eyebrow">Colección · Creadores</p>
+    <h1>Artistas</h1>
+    <p class="lead">Las manos y las mentes detrás de cada obra.</p>
+    <div class="ornament" aria-hidden="true">&#10086;</div>
+  </header>
+
+  <main id="contenido" class="container">
+    <div class="toolbar">
+      <div class="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Buscar artista…" aria-label="Buscar">
+      </div>
+      <button id="btn-new" class="btn" type="button">+ Nuevo artista</button>
+    </div>
+    <div id="chips" class="chips" aria-label="Filtros"></div>
+    <div id="grid" class="grid" aria-live="polite"></div>
+    <p id="state" class="state" hidden></p>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
